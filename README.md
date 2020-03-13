@@ -1,1 +1,1 @@
-# Kashyap Software - Magento 2 Custom Collection
+# Magento 2 Custom Collection
