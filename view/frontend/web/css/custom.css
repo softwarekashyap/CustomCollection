@@ -1,0 +1,50 @@
+.sub-cat-li {
+    float: left;
+    width: 25%;
+    min-height: 202px;
+    box-sizing: border-box;
+}
+.cat-image {
+    height: 212px;
+    width: 100%;
+}
+.page-title h3 {
+    font-weight: 600;
+}
+.sub-cat-ul li .category-wrap .info a {
+    font-size: 18px;
+    color: #0c2340;
+    height: 57px;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+.sub-cat-ul li .category-wrap {
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    float: left;
+    width: 100%;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.sub-cat-ul li {
+    list-style: none;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+ul.sub-cat-ul{margin:0 -15px; padding: 0;}
+
+.cat-descriprtin {
+    height: 42px;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+}
+
+.custom_collection {
+    float: left;
+    width: 100%;
+}

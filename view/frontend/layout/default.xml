@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * @author Kashyap Team
+ * @copyright Copyright (c) 2018 Kashyap (http://kashyapsoftware.com/)
+ * @package Kashyap_Customcollection
+*/
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+	<head>        
+        <!-- <css src="Kashyap_Customcollection::css/owl.carousel.css"/>
+		<css src="Kashyap_Customcollection::css/custom.css"/> -->		
+    </head> 
+</page>

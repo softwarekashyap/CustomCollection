@@ -1,0 +1,47 @@
+<?php 
+
+/**
+ * @author Kashyap Team
+ * @copyright Copyright (c) 2018 Kashyap (http://kashyapsoftware.com/)
+ * @package Kashyap_Customcollection
+*/
+
+	$category_id     = $this->getData('category_id');
+	$category_count     = $this->getData('category_count');
+	$_subCategoryCollection = $block->getChildCategoryCollection($category_id, $category_count);
+	$_helper = $this->helper('Magento\Catalog\Helper\Output');
+
+	/*echo "<pre>";
+	print_r($_subCategoryCollection->getData());*/
+?>
+<div class="sub-cat-collection">
+	<div class="page-title">
+	    <h3><?= $this->getData('title') ?></h3>
+	</div>
+	<ul class="sub-cat-ul">
+		<?php foreach($_subCategoryCollection as $_subcat) : ?>
+				<?php
+					 $_catByIdCollection = $block->getCategory($_subcat->getId());
+					 $_imgUrl = $this->getUrl('pub') . 'media/catalog/category/'. $_catByIdCollection->getThumbnail();
+					 if(!$_catByIdCollection->getThumbnail()){
+					 	$_imgUrl = $this->getViewFileUrl('Kashyap_Customcollection::images/coming-soon.jpg');
+					 } 
+				?>
+			<li class="sub-cat-li">
+                <div class="category-wrap">
+                    <div class="cat-image">
+                        <a href="<?php echo $_subcat->getUrl() ?>">
+                        	<img src="<?= $_imgUrl ?>" />
+                        </a>
+                    </div>
+                    <div class="info">
+                        <a class="link" href="<?php echo $_subcat->getUrl() ?>"><?php echo $_subcat->getName(); ?></a>
+<!--                        <div class="cat-descriprtin">
+	                        <?//= $_catByIdCollection->getDescription() ?>
+	                    </div>-->
+                    </div>
+                </div>
+            </li>
+		<?php endforeach; ?>
+	</ul>
+</div>

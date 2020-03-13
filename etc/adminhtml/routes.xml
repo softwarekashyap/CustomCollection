@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+	
+/**
+ * @author Kashyap Team
+ * @copyright Copyright (c) 2018 Kashyap (softwarekashyap@gmail.com)
+ * @package Kashyap_Customcollection
+*/
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="customcollection" frontName="customcollection">
+            <module name="Kashyap_Customcollection" before="Magento_Backend" />
+        </route>
+    </router>
+</config>

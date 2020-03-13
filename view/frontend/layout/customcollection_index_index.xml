@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * @author Kashyap Team
+ * @copyright Copyright (c) 2018 Kashyap (http://kashyapsoftware.com/)
+ * @package Kashyap_Customcollection
+*/
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+
+    <body>
+        <referenceContainer name="content"> 
+            <block class="Kashyap\Customcollection\Block\Index\Index" name="customcollection_index_index" template="Kashyap_Customcollection::customcollection.phtml">
+            <arguments>
+                <argument name="attribute_code" xsi:type="string">new</argument>
+                <argument name="title" xsi:type="string">Custom Collections</argument>
+                <argument name="product_count" xsi:type="number">10</argument>
+            </arguments>
+        </block>
+        </referenceContainer>
+    </body>
+</page>

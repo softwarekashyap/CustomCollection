@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+	
+/**
+ * @author Kashyap Team
+ * @copyright Copyright (c) 2018 Kashyap (softwarekashyap@gmail.com)
+ * @package Kashyap_Customcollection
+*/
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Module/etc/module.xsd">
+    <module name="Kashyap_Customcollection" setup_version="1.0.0" />
+</config>
